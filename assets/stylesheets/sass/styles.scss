@@ -1,0 +1,34 @@
+@import 'bourbon/bourbon';
+
+body {
+  background: tint(hotpink, 90%);
+  margin: 10% 20%;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+h1 {
+  color: shade(hotpink, 60%);
+  font-size: 60px;
+}
+
+#jects, #facts {
+  background: white;
+  justify-content: center;
+}
+
+.zoom {
+  background: white;
+  // align-items: center;
+  border: 1px solid black;
+  width: 300px;
+  height: 220px;
+  padding: 10px;
+  @include transform(scale(0.8));
+  @include transition(all .5s ease-in-out);
+}
+
+.zoom:hover {
+  @include transition(all 1s ease-in-out);
+  @include transform(scale(1) rotate(-10deg));
+}
