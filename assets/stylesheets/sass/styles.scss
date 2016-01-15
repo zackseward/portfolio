@@ -25,10 +25,10 @@ h1 {
   height: 220px;
   padding: 10px;
   @include transform(scale(0.8));
-  @include transition(all .5s ease-in-out);
+  @include transition(all .1s ease-in-out);
 }
 
 .zoom:hover {
-  @include transition(all 1s ease-in-out);
+  @include transition(all .3s ease-in-out);
   @include transform(scale(1) rotate(-10deg));
 }
