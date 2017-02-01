@@ -1,9 +1,10 @@
 @import 'bourbon/bourbon';
 
+
 body {
   background: tint(hotpink, 90%);
   margin: 10% 20%;
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: middle;
 }
 
@@ -12,20 +13,21 @@ h1 {
   font-size: 60px;
 }
 
-#jects, #facts {
+.jects, .facts {
   background: white;
-  justify-content: center;
+  // border-radius: 20px;
 }
 
 .zoom {
-  background: white;
-  // align-items: center;
+  background: tint(hotpink, 97%);
+  align-items: center;
   border: 1px solid black;
-  width: 300px;
+  // border-radius: 5px;
+  width: 330px;
   height: 220px;
-  padding: 10px;
+  padding: 15px;
   @include transform(scale(0.8));
-  @include transition(all .1s ease-in-out);
+  @include transition(all .3s ease-in-out);
 }
 
 .zoom:hover {
